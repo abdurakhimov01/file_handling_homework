@@ -1,10 +1,5 @@
-def main(data:str):
-    """
-    The data is from the file. Return number of characters in the file.
-    Args:
-        data: str
-    Returns:
-        int: return answer
-    """
-
-# Read data from file
+def main():
+    f=open('data/data02.txt','r')
+    k=f.read()
+    return len(k)
+print(main())
