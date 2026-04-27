@@ -1,10 +1,5 @@
-def main(data:str):
-    """
-    The data is from the file. Return data as a list type.
-    Args:
-        data: str
-    Returns:
-        list: return answer
-    """
-
-# Read data from file
+def main():
+    f=open("data/data01.txt",'r')
+    k=f.read()
+    return [k]
+print(main())
