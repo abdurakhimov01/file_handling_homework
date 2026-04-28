@@ -2,8 +2,6 @@ import string
 def main(filename):
     o=open(filename,"r")
     f=o.read()
-    d=string.digits
-    l=string.ascii_letters
     i=0
     k=0
     g=0
