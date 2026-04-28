@@ -1,10 +1,8 @@
-def main(data:str):
-    """
-    The data is from the file. Return the str(non-digital) characters as a list type.
-    Args:
-        data: str
-    Returns:
-        list: return answer
-    """
-    
-# Read data from file
+def main(filename):
+    f=open(filename, "r")
+    p=f.readline()
+    l=[]
+    for i in p:
+        l.append(i)
+    return l
+print(main("data/data04.txt"))
