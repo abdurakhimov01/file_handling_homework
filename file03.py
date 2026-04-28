@@ -1,10 +1,11 @@
-def main(data:str):
-    """
-    The data is from the file. Return the digits as a list type.
-    Args:
-        data: str
-    Returns:
-        list: return answer
-    """
-
-# Read data from file
+import string
+def main(filename):
+    f = open(filename, 'r')
+    p=f.read()
+    l=[]
+    d=string.digits
+    for i in p:
+        if i in d:
+            l.append(i)
+    return l
+print(main("data/data03.txt"))
