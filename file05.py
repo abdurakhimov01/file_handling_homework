@@ -10,5 +10,5 @@ def main(filename):
             k+=1
         elif i in string.ascii_letters:
             g+=1
-    return k,g
+    return [k,g]
 print(main("data/data05.txt"))
