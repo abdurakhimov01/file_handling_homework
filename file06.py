@@ -1,10 +1,9 @@
-def main(data:str):
-    """
-    The data is from the file. Find the each row length and return as list type.
-    Args:
-        data: str
-    Returns:
-        list: return answer
-    """
-    
-# Read data from file
+def main(filename):
+    o=open(filename, "r")
+    f=o.read()
+    p=f.split("\n")
+    a=[]
+    for i in p:
+        a+=[len(i)]
+    return a
+print(main("data/data06.txt"))
